@@ -18,6 +18,10 @@ Only these folders are ours — edit freely:
 
 Everything else (`ExplosiveLLC`, `Kevin Iglesias`, `Brawler Animations Sample`, `FightingMotionsVolume1`) is imported asset-store content used as an animation source. **Do not modify vendor assets**, and do not apply scene-specific overrides back to `GrayCylinderPlayer.prefab` — the scene player is an overridden prefab instance.
 
+## Lessons log (read first when debugging)
+
+`.claude/lessons.md` records past problems: symptom, cause, fix, and how to recognise them next time. **Before debugging any issue, skim it for a matching symptom.** **After fixing an issue, append an entry** (date, symptom, cause, fix, "Next time") at the bottom, including mistakes made along the way that cost time.
+
 ## Design plans
 
 `Assets/Plans/platforming-fighting-prototype.md` is the source of truth for mechanics and tuning intent. The top section is the current revision; sections marked "Historical … superseded" are kept for context only — do not restore behavior they describe (e.g. gravity-active dash, perpendicular-only sprint wall jumps, forced-forward ledge launch). Read the current section before changing movement code; it specifies exact action priorities, timers, and edge cases.
